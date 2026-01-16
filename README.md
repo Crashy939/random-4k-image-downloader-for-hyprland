@@ -87,5 +87,5 @@ exec-once = sleep 3 && swww-daemon
 exec-once = sleep 3 && python ~/.config/hypr/scripts/4kwallpapers_daemon.py
 ```
 Note: If you don't see the changes, you can use the "hyprctl reload" command or restart your computer.
-To test if the Python script works, you can use the command python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next
+To test if the Python script works, you can use the command python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next.
 If swww is not running, use the command swww-daemon &
