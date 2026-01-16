@@ -29,7 +29,7 @@ Once you're in the directory, use the following command:
 ```bash
 git clone https://aur.archlinux.org/yay.git
 ```
-Then enter the directory with cd yay and run the command:
+Then enter the directory with `cd yay` and run the command:
 ```bash
 makepkg -si
 ```
@@ -60,7 +60,7 @@ To change it, we need to create a file; follow these steps:
 ```bash
 mkdir -p ~/.config/caelestia/
 ```
-2. Create the shell.json file inside that directory using the touch command if it doesn't exist; if it does exist, modify it with a text editor.
+2. Create the shell.json file inside that directory using the `touch` command if it doesn't exist; if it does exist, modify it with a text editor.
 3. Add the following content to the shell.json file:
 ```json
 {
@@ -69,14 +69,14 @@ mkdir -p ~/.config/caelestia/
     }
 }
 ```
-4. Now, depending on your configuration, the keybinds configuration can be in two directories. By default, it's in ~/.config/hypr/hyprland.conf. But if you configured Caelestia, the file will be in ~/.config/hypr/hyprland/keybinds.conf. When you find the .conf file, you should make sure you have these lines:
+4. Now, depending on your configuration, the keybinds configuration can be in two directories. By default, it's in `~/.config/hypr/hyprland.conf`. But if you configured Caelestia, the file will be in `~/.config/hypr/hyprland/keybinds.conf`. When you find the .conf file, you should make sure you have these lines:
 ```conf
 bind = Super, W, exec, python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next
 bind = Super, W, exec, pgrep -x swww-daemon || swww-daemon --format xrgb
 ```
-This is a shortcut: pressing Super + W will run the Python script to download and change the wallpaper. This step is entirely optional and can be skipped without issue, or you can modify the keybind to work with the key you need.
+This is a shortcut: pressing `Super + W` will run the Python script to download and change the wallpaper. This step is entirely optional and can be skipped without issue, or you can modify the keybind to work with the key you need.
 
-5. The configuration file that Hyprland starts up can also be found in different directories; it might be in ~/.config/hypr/hyprland.conf or in ~/.config/hypr/hyprland/execs.conf, make sure you have these lines:
+5. The configuration file that Hyprland starts up can also be found in different directories; it might be in `~/.config/hypr/hyprland.conf` or in `~/.config/hypr/hyprland/execs.conf`, make sure you have these lines:
 ```conf
 exec-once = swww-daemon
 exec-once = python ~/.config/hypr/scripts/4kwallpapers_daemon.py
@@ -86,6 +86,6 @@ If caelestia shell were to run first, blocking swww, you could add time so that 
 exec-once = sleep 3 && swww-daemon
 exec-once = sleep 3 && python ~/.config/hypr/scripts/4kwallpapers_daemon.py
 ```
-Note: If you don't see the changes, you can use the "hyprctl reload" command or restart your computer.
-To test if the Python script works, you can use the command python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next.
-If swww is not running, use the command swww-daemon &
+Note: If you don't see the changes, you can use the `hyprctl reload` command or restart your computer with the `reboot` command.
+To test if the Python script works, you can use the command `python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next`.
+If swww is not running, use the command `swww-daemon &`.
