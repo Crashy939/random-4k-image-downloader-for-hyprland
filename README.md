@@ -1,7 +1,7 @@
 # random-4k-image-downloader-for-hyprland
 Modification of the Python code provided by Hossein Mirhosseini in his public repository:  https://github.com/hosseinmirhosseini76/random-4k-image-downloader/tree/main. This code is just an improvisation for setting it up on Arch Linux + Hyprland + Caelestia and may not work on all systems.
 
-##Description
+## Description
 The idea is to create a Python daemon that will do the following:
 - Download random wallpapers from 4kwallpapers.com
 - Desktop only (not mobile)
@@ -15,12 +15,12 @@ The idea is to create a Python daemon that will do the following:
 - Wait 60–180 minutes (random)
 - Manual wallpaper changes can be made using a keybind
 
-##Requirements
+## Requirements
 Caelestia Shell must be functioning properly and you will also need to install several packages:
 ```bash
 sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm notify-send
 ```
-###Install yay (if you don't already have it)
+### Install yay (if you don't already have it)
 ```bash
 sudo pacman -S --needed base-devel git
 ```
