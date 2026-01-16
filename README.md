@@ -11,14 +11,13 @@ The idea is to create a Python daemon that will do the following:
 - Automatically delete old wallpapers
 - Change wallpapers using swww
 - Generate dynamic colors and borders (Hyprland)
-- Display a notification when changing wallpapers
 - Wait 60–180 minutes (random)
 - Manual wallpaper changes can be made using a keybind
 
 ## Requirements
 Caelestia Shell must be functioning properly and you will also need to install several packages:
 ```bash
-sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm notify-send python-lxml python-pillow
+sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm python-lxml python-pillow
 ```
 ### Install yay (if you don't already have it)
 ```bash
