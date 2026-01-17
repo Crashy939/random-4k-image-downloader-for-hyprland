@@ -11,13 +11,14 @@ The idea is to create a Python daemon that will do the following:
 - Automatically delete old wallpapers
 - Change wallpapers using swww
 - Generate dynamic colors and borders (Hyprland)
+- Show notification when changing
 - Wait 60–180 minutes (random)
 - Manual wallpaper changes can be made using a keybind
 
 ## Requirements
 Caelestia Shell must be functioning properly and you will also need to install several packages:
 ```bash
-sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm python-lxml python-pillow
+sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm python-lxml python-pillow lib-notify procps-ng
 ```
 ### Install yay (if you don't already have it)
 ```bash
@@ -88,3 +89,10 @@ exec-once = sleep 3 && python ~/.config/hypr/scripts/4kwallpapers_daemon.py
 Note: If you don't see the changes, you can use the `hyprctl reload` command or restart your computer with the `reboot` command.
 To test if the Python script works, you can use the command `python ~/.config/hypr/scripts/4kwallpapers_daemon.py --next`.
 If swww is not running, use the command `swww-daemon &`.
+
+### Additional
+You could delete all wallpapers using an alias as a command. To do this, create the `.bashrc` file if it doesn't exist in the `~` directory and paste or modify the alias: 
+```bash
+alias DeleteWallpapers='rm -rf ~/.local/share/wallpapers/4kwallpapers/*'
+```
+Running `DeleteWallpapers` as a command would delete them.
