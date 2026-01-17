@@ -56,7 +56,7 @@ With that configured, modify the Python file (you can use any text editor; in th
 ## Notes and completion
 This is how the script is set up. Now, in the Hyprland + Caelestia configuration, you only need to have one entity responsible for managing the wallpapers. By default, Caelestia Shell does this, but you need to change it so that swww uses it for the script to work.
 To change it, we need to create a file; follow these steps:
-1. Create the Celestia settings directory (if it does not exist):
+1. Create the Caelestia settings directory (if it does not exist):
 ```bash
 mkdir -p ~/.config/caelestia/
 ```
