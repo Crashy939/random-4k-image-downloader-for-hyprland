@@ -4,6 +4,8 @@ python-beautifulsoup4==4.14.3-2
 python-tqdm==4.67.1-5
 python-lxml==6.0.2-2
 python-pillow==12.1.0-2
+libnotify==0.8.8-1
+procps-ng==4.0.5-3
 
 swww==0.11.2-1
 wallust==3.4.0-1

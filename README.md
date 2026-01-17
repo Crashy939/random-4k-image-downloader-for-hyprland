@@ -18,7 +18,7 @@ The idea is to create a Python daemon that will do the following:
 ## Requirements
 Caelestia Shell must be functioning properly and you will also need to install several packages:
 ```bash
-sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm python-lxml python-pillow lib-notify procps-ng
+sudo pacman -S python python-requests python-beautifulsoup4 python-tqdm python-lxml python-pillow libnotify procps-ng
 ```
 ### Install yay (if you don't already have it)
 ```bash
