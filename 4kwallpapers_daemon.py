@@ -86,19 +86,10 @@ def sha256(path):
 def run(cmd):
     subprocess.run(cmd, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
-
-# ---------- SWWW ----------
-
-def ensure_swww():
-    if subprocess.run(["pgrep", "-x", "swww-daemon"],
-                      stdout=subprocess.DEVNULL).returncode != 0:
-        run(["swww-daemon"])
-        time.sleep(1)
-
+# ---------- AWWW ----------
 
 def set_wallpaper(path):
-    ensure_swww()
-    run(["swww", "img", str(path)])
+    run(["awww", "img", str(path)])
 
 # ---------- HYPRLAND COLORS ----------
 

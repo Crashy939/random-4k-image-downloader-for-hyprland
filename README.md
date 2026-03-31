@@ -96,3 +96,6 @@ You could delete all wallpapers using an alias as a command. To do this, create 
 alias DeleteWallpapers='rm -rf ~/.local/share/wallpapers/4kwallpapers/*'
 ```
 Running `DeleteWallpapers` as a command would delete them.
+
+### 2026 Update
+Due to the change from swww to awww, the Python script needs to be slightly modified to work with awww. The code has been modified to work with awww. If you need the script with swww, you can consult the history.
